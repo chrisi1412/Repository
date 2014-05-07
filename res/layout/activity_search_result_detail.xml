@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <!-- Detailiertes Suchergebnis eines einzelnen ausgewählten Buches -->
+    <!-- wird beim klicken auf ein Item in der Suchergebnisliste ListView -->
+    <!-- ausgeführt und enthält mehr Details zu dem jeweiligen Buch -->
+
+    <!-- Button zum Hinzufügen -->
+    <Button
+        android:id="@+id/SearchResultDetailActivity_Hinzufuegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Hinzufügen"
+        android:textSize="15dip" />
+
+    <!-- Autor Label -->
+
+    <!-- Titel Label -->
+
+    <!-- Bild Label -->
+    <ImageView
+        android:id="@+id/SearchResultDetailActivity_BildLabel"
+        android:layout_width="100dip"
+        android:layout_height="150dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/brecht" />
+
+    <!-- Inhalt Label -->
+	<FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchResultDetailActivity_BildLabel"
+        android:layout_below="@+id/searchResultDetailActivity_BildLabel"
+        android:layout_marginTop="24dp" >
+    </FrameLayout>
+
+    <!-- Button zur nächsten Bücherei (Maps) -->
+    <Button
+        android:id="@+id/SearchResultDetailActivity_Buecherei"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="nächste Bücherei"
+        android:textSize="15dip" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+	</FrameLayout>
+
+    <EditText
+        android:id="@+id/SearchResultDetailActivity_InhaltLabel"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/SearchResultDetailActivity_Buecherei"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Bücherinhalt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/SearchResultDetailActivity_AutorLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SearchResultDetailActivity_BildLabel"
+        android:layout_alignLeft="@+id/SearchResultDetailActivity_TitelLabel"
+        android:layout_marginBottom="26dp"
+        android:text="Autor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/SearchResultDetailActivity_TitelLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SearchResultDetailActivity_AutorLabel"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/SearchResultDetailActivity_BildLabel"
+        android:text="Titel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!--
+    <TextView
+        android:id="@+id/SearchResultDetailActivity_ISBNLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SearchResultDetailActivity_BildLabel"
+        android:layout_below="@+id/SearchResultDetailActivity_BildLabel"
+        android:layout_marginTop="21dp"
+        android:text="ISBN" />-->
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.books.StartActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/StartActivity_Suche"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="top|bottom|left|center_vertical|center_horizontal"
+        android:text="@string/StartActivity_Suche" />
+
+    <Button
+        android:id="@+id/StartActivity_Buecherei"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/StartActivity_Suche"
+        android:layout_below="@+id/StartActivity_Suche"
+        android:layout_marginTop="40dp"
+        android:gravity="top|bottom|left|center_vertical|center_horizontal"
+        android:height="48dip"
+        android:minHeight="24dip"
+        android:text="@string/StartActivity_Buecherei" />
+
+    <Button
+        android:id="@+id/StartActivity_Favoriten"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/StartActivity_Buecherei"
+        android:layout_below="@+id/StartActivity_Buecherei"
+        android:layout_marginTop="40dp"
+        android:gravity="top|bottom|left|center_vertical|center_horizontal"
+        android:text="@string/StartActivity_Favoriten" />
+
+</RelativeLayout>
+

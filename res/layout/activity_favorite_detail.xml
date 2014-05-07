@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.books.FavoriteDetailActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/FavoriteDetailActivity_Bild"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_drawer" />
+
+    <ImageButton
+        android:id="@+id/FavoriteDetailActivity_Loeschen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:src="@android:drawable/ic_menu_delete" />
+
+
+    <TextView
+        android:id="@+id/FavoriteDetailActivity_Titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/FavoriteDetailActivity_Titel" />
+
+    <TextView
+        android:id="@+id/FavoriteDetailActivity_Autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FavoriteDetailActivity_Titel"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/FavoriteDetailActivity_Autor" />
+
+    <TextView
+        android:id="@+id/FavoriteDetailActivity_ISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FavoriteDetailActivity_Autor"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/FavoriteDetailActivity_ISBN" />
+
+    <TextView
+        android:id="@+id/FavoriteDetailActivity_Inhalt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FavoriteDetailActivity_Bild"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/FavoriteDetailActivity_Inhalt" />
+    
+    <Button
+        android:id="@+id/FavoriteDetailActivity_Buecherei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FavoriteDetailActivity_Inhalt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top|bottom|left|center_vertical|center_horizontal"
+        android:text="@string/FavoriteDetailActivity_Buecherei" />
+
+</RelativeLayout>

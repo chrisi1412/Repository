@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Books</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="StartActivity_Suche">Suche</string>
+    <string name="StartActivity_Buecherei">Bücherei in Ihrer Nähe</string>
+    <string name="StartActivity_Favoriten">Favoriten</string>
+
+    <!-- Überschriften der einzelnen Activities -->
+    <string name="title_activity_favorite_detail">Favoriten Detailansichty</string>
+    <string name="title_activity_favorite">Favoriten</string>
+    <string name="title_activity_search_result_detail">SearchResultDetailActivity</string>
+
+    <!-- Favorite Activity -->
+    <string name="FavoriteActivity_Titel">Titel</string>
+    <string name="FavoriteActivity_Autor">Autor</string>
+    <string name="FavoriteActivity_NoFavoriteExist">Zur Zeit sind noch keine Favoriten vorhanden.</string>
+    <string name="FavoriteActivity_Favoriten">Ihre Favoriten:</string>
+    <string name="FavoriteActivity_ISBN">ISBN</string>
+
+    <!-- Favorite Detail Activity -->
+    <string name="FavoriteDetailActivity_Loeschen">Löschen</string>
+    <string name="FavoriteDetailActivity_Titel">Titel</string>
+    <string name="FavoriteDetailActivity_Autor">Autor</string>
+    <string name="FavoriteDetailActivity_ISBN">ISBN</string>
+    <string name="FavoriteDetailActivity_Inhalt">Inhalt</string>
+    <string name="FavoriteDetailActivity_Buecherei">Bücherei in Ihrer Nähe</string>
+
+    <!-- Search Result Detail Activity -->
+    <string name="SearchResultDetailActivity_Titel">Titel</string>
+    <string name="SearchResultDetailActivity_Autor">Autor</string>
+    <string name="SearchResultDetailActivity_ISBN">ISBN</string>
+    <string name="SearchResultDetailActivity_Hinzufuegen">Hinzufuegen</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="scan">Scan</string>
+    <string name="title_activity_scanner">Scanner</string>
+    <string name="search">Buch Suchen</string>
+    <string name="map">Map</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_search_result_activty">SearchResultActivty</string>
+    <string name="title_activity_single_book">SingleBookActivity</string>
+    
+    <!-- Search Result Activity -->
+    <string name="SearchResultActivity_emptyValue">Kein Eingabe Wert</string>
+
+</resources>
